@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Converter</title>
+</head>
+<body>
+
+    <header>
+        <div class="title-section act-width">
+            <h1>Converter</h1>
+            <div class="info-btn-cont" onclick="info()">
+                i
+            </div>
+        </div>
+    </header>
+
+    <div class="info-cont" style="display: none;">
+        <div class="info">
+            <h4>Converter made by DeV</h4>
+            <p class="info-info">
+                This is a application by which you can learn how values can be converted from one number system to another dynamically.
+                Made by DeV.
+            </p>
+        </div>
+    </div>
+
+    <div class="center">
+        <div class="main act-width">
+            <section class="choice-menu">
+                <div>
+                    <label for="fromdd">From :</label><br>
+                    <select id="fromdd" name="from-type">
+                        <option value="dec">Decimal</option>
+                        <option value="bin">Binary</option>
+                        <option value="oct">Octal</option>
+                        <option value="hex">Hexadecimal</option>
+                    </select>
+                </div>
+
+                <div class="swap-btn" onclick="swap()">
+                    =><br><=
+                </div>
+
+                <div>
+                    <label for="todd">To :</label><br>
+                    <select id="todd" name="from-type">
+                        <option value="dec">Decimal</option>
+                        <option value="hex">Hexadecimal</option>
+                        <option value="oct">Octal</option>
+                        <option value="bin">Binary</option>
+                    </select>
+                </div>
+            </section>
+            
+            <section class="input-cont">
+                <input class="input" id="input" type="text" name="input" placeholder="Enter the value...">
+            </section>
+
+            <section class="output-cont">
+                <div class="output"></div>
+            </section>
+    
+            <input type="submit" onclick="eval()">
+
+
+            <section class="solution-cont">
+                <h4 style="font-family: consolas; text-align: left; width: 100%;margin: 10px 0;">Solution :</h4>
+                <div class="solution">
+
+                </div>
+            </section>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+    
+</body>
+</html>
